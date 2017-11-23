@@ -1,9 +1,10 @@
-.main{
-	background-color:red;
+body {
+    background-color: LightGray;
 }
-#techstitution{
-	font-family:underline;
+h1{
+    color:MediumSeaGreen ;
+	text-align: left;
 }
-#grupi{
-	
+h3{
+   color: DarkCyan ;
 }

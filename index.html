@@ -1,20 +1,129 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+<title>QKMK</title>
 <link rel="stylesheet" type="text/css" href="css/style.css"></link>
 <link rel="stylesheet"  type="text/css" href="css/bootstrap/css/bootstrap.min.css"></link>
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="css/bootstrap/js/bootstrap.min.js"></script>
+<style>
+body {
+    background-color: LightSteelBlue 	 ;
+}
+h1{
+    color:Navy  ;
+	text-align: left;
+}
+h3{
+   color: DarkCyan ;
+}
+hr{
+ border-width: 4px;
 
+}
 
+</style>
 </head>
 <body>
 
-<p id="techstitution" class="main">Techstitution</p>
-<form>
+<h1>Forma per regjistrimin e pikave kufitare</h1><br><br>
 
+<form class="form-horizontal">
+
+<div class ="form-group">
+
+<label  class="col-sm-2" for="pika-kufitare">Pika kufitare:</label>
+ <div class="dropdown">
+     <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" >Zgjedhni piken kufitare
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#"Vërmicë</a></li>
+        <li><a href="#">Qafë e Prushit</a></li>
+        <li><a href="#">Qafë e Morinës</a></li>
+	    <li><a href="#">Kullë</a></li>
+	    <li><a href="#">Bërnjak</a></li>
+	    <li><a href="#">Jarinje</a></li>
+	    <li><a href="#">Merdarë</a></li>
+	    <li><a href="#">Mutivodë</a></li>
+	    <li><a href="#">Dheu i Bardhë</a></li>
+	    <li><a href="#">Muçibabë</a></li>
+	    <li><a href="#">Hani i Elezit</a></li>
+	    <li><a href="#">Glloboqicë</a></li>
+     </ul>
+  </div>
+</div>
+<hr>
+
+<h3>Hyrje</h3><br /><br />
+<div class="form-group">
+    <label class="col-sm-2" for="hyrje-min"> Minimum:</label>
+	<div class="col-sm-4">
+    <input type="text" class="form-control" id="hyrje-min" readonly>minuta
+	</div>
+	
+</div>
+
+<div class="form-group">
+    <label  class="col-sm-2" for="hyrje-max"> Maksimum: </label>
+	<div class="col-sm-4">
+     <input type="text" class="form-control" id="hyrje-max" readonly>minuta
+	</div>
+</div>
+
+
+
+<h3>Dalje</h3><br><br>
+
+<div class="form-group">
+<label class="col-sm-2" for="dalje-min">Minimum:</label>
+ <div class="col-sm-4">
+<input type="text" class="form-control" id="dalje-min" readonly>minuta
+</div>
+</div>
+
+<div class="form-group">
+<label  class="col-sm-2" for="dalje-max">Maksimum</label>
+<div class="col-sm-4">
+<input type="text" class="form-control" id="dalje-max" readonly>minuta
+</div>
+</div>
+<hr>
+<h3>Hyrje</h3><br><br>
+<div class="form-group">
+<label class="col-sm-2" for="hyrje-min1">Minimum:</label>
+<div class="col-sm-4">
+<input type="text" class="form-control" id="hyrje-min1" readonly>metra
+</div>
+</div>
+
+<div class="form-group">
+<label class="col-sm-2" for="hyrje-max1">Maksimum:</label>
+<div class="col-sm-4">
+<input type="text" class="form-control" id="hyrje-max1" readonly>metra
+</div>
+</div>
+
+<h3>Dalje</h3><br><br>
+
+<div class="form-group">
+<label class="col-sm-2" for="dalje-min1">Minimum:</label>
+<div class="col-sm-4">
+<input type="text" class="form-control" id="dalje-min1" readonly >metra
+</div>
+</div>
+
+<div class="form-group">
+<label class="col-sm-2" for="dalje-max1">Maksimum:</label>
+<div class="col-sm-4">
+<input type="text" class="form-control" id="dalje-max1" readonly>metra
+</div>
+</div>
+<hr>
+
+ <button type="button" class="btn btn-primary btn-lg">Dergo</button>
+ <button type="button" class="btn btn-primary btn-lg">Fshij</button>
+ 
 </form>
 
 </body>
