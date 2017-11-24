@@ -26,49 +26,52 @@ hr{
 </style>
 </head>
 <body>
-
+<div class="container-fluid">
 <h1>Forma per regjistrimin e pikave kufitare</h1><br><br>
 
-<form class="form-horizontal">
+<form class="form-horizontal" id="border-wait-form">
 
-<div class ="form-group">
+<div class ="form-group form-style-group">
 
 <label  class="col-sm-2" for="pika-kufitare">Pika kufitare:</label>
- <div class="dropdown">
-     <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" >Zgjedhni piken kufitare
-      <span class="caret"></span></button>
-      <ul class="dropdown-menu">
-        <li><a href="#"Vërmicë</a></li>
-        <li><a href="#">Qafë e Prushit</a></li>
-        <li><a href="#">Qafë e Morinës</a></li>
-	    <li><a href="#">Kullë</a></li>
-	    <li><a href="#">Bërnjak</a></li>
-	    <li><a href="#">Jarinje</a></li>
-	    <li><a href="#">Merdarë</a></li>
-	    <li><a href="#">Mutivodë</a></li>
-	    <li><a href="#">Dheu i Bardhë</a></li>
-	    <li><a href="#">Muçibabë</a></li>
-	    <li><a href="#">Hani i Elezit</a></li>
-	    <li><a href="#">Glloboqicë</a></li>
-     </ul>
+ <div class="col-sm-2">
+     <select class="form-control" name="zgjedh-piken-kufitare" id="pika-kufitare" >
+    
+	  <option disabled selected> Zgjedhni piken kufitare</option>
+        <option value="vermice">Vërmice</option>
+        <option value="qafe-e-prushit">Qafe e Prushit</option>
+		<option value="qafa-e-morines">Qafa e Morinës</option>
+		<option value="kulle">Kulle</option>
+	    <option value="bernjak">Bërnjak</option>
+        <option value="jarinje">Jarinje</option>
+        <option value="merdarë">Merdarë</option>
+        <option value="mutivode">Mutivodë</option>
+        <option value="dheu-i-bardhe">Dheu i Bardhë</option>
+        <option value="mucibabe">Muçibabë</option>
+        <option value="hani-i-elezit">Hani i Elezit</option>
+        <option value="glloboqice">Glloboqicë</option>
+     
+  </select>
   </div>
 </div>
 <hr>
 
 <h3>Hyrje</h3><br /><br />
 <div class="form-group">
-    <label class="col-sm-2" for="hyrje-min"> Minimum:</label>
+    <label class="col-sm-2" for="hyrje-min-minuta"> Minimum:</label>
 	<div class="col-sm-4">
-    <input type="text" class="form-control" id="hyrje-min" readonly>minuta
+    <input type="text" class="form-control" name="hyrje-min-minuta" id="hyrje-min-minuta" >
 	</div>
+	<span>minuta</span>
 	
 </div>
 
 <div class="form-group">
-    <label  class="col-sm-2" for="hyrje-max"> Maksimum: </label>
+    <label  class="col-sm-2" for="hyrje-max-minuta"> Maksimum: </label>
 	<div class="col-sm-4">
-     <input type="text" class="form-control" id="hyrje-max" readonly>minuta
+     <input type="text"  class ="form-control" name="hyrje-max-minuta" id="hyrje-max-minuta">
 	</div>
+	<span>minuta</span>
 </div>
 
 
@@ -76,55 +79,61 @@ hr{
 <h3>Dalje</h3><br><br>
 
 <div class="form-group">
-<label class="col-sm-2" for="dalje-min">Minimum:</label>
+<label class="col-sm-2" for="dalje-min-minuta">Minimum:</label>
  <div class="col-sm-4">
-<input type="text" class="form-control" id="dalje-min" readonly>minuta
+<input type="text" class="form-control" name="dalje-min-minuta" id="dalje-min-minuta">
 </div>
+<span>minuta</span>
 </div>
 
 <div class="form-group">
-<label  class="col-sm-2" for="dalje-max">Maksimum</label>
+<label  class="col-sm-2" for="dalje-max-minuta">Maksimum</label>
 <div class="col-sm-4">
-<input type="text" class="form-control" id="dalje-max" readonly>minuta
+<input type="text" class="form-control" name="dalje-max-minuta" id="dalje-max-minuta">
 </div>
+<span>minuta</span>
 </div>
 <hr>
 <h3>Hyrje</h3><br><br>
 <div class="form-group">
-<label class="col-sm-2" for="hyrje-min1">Minimum:</label>
+<label class="col-sm-2" for="hyrje-min-metra">Minimum:</label>
 <div class="col-sm-4">
-<input type="text" class="form-control" id="hyrje-min1" readonly>metra
+<input type="text" class="form-control"  name="hyrje-min-metra" id="hyrje-min-metra">
 </div>
+<span>metra</span>
 </div>
 
 <div class="form-group">
-<label class="col-sm-2" for="hyrje-max1">Maksimum:</label>
+<label class="col-sm-2" for="hyrje-max-metra">Maksimum:</label>
 <div class="col-sm-4">
-<input type="text" class="form-control" id="hyrje-max1" readonly>metra
+<input type="text" class="form-control" name="hyrje-max-metra" id="hyrje-max-metra">
 </div>
+<span>metra</span>
 </div>
 
 <h3>Dalje</h3><br><br>
 
 <div class="form-group">
-<label class="col-sm-2" for="dalje-min1">Minimum:</label>
+<label class="col-sm-2" for="dalje-min-metra">Minimum:</label>
 <div class="col-sm-4">
-<input type="text" class="form-control" id="dalje-min1" readonly >metra
+<input type="text" class="form-control" name="dalje-min-metra" id="dalje-min-metra">
 </div>
+<span>metra</span>
 </div>
 
 <div class="form-group">
-<label class="col-sm-2" for="dalje-max1">Maksimum:</label>
+<label class="col-sm-2" for="dalje-max-metra">Maksimum:</label>
 <div class="col-sm-4">
-<input type="text" class="form-control" id="dalje-max1" readonly>metra
+<input type="text" class="form-control" name="dalje-max-metra" id="dalje-max-metra">
 </div>
+<span>metra</span>
 </div>
 <hr>
 
- <button type="button" class="btn btn-primary btn-lg">Dergo</button>
+ <button type="submit" class="btn btn-primary btn-lg">Dergo</button>
  <button type="button" class="btn btn-primary btn-lg">Fshij</button>
  
 </form>
-
+</div>
 </body>
 </html>
